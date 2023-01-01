@@ -1,0 +1,1029 @@
+/*****************************************************************************************
+************************************** start variables ******************************/
+
+:root{
+    --primarycolor: #e7b079;
+    --secondrycolor: #7b7b7b;
+    --bgcolor:#292929;
+    --bgcolor2:#f9f9f9;
+    --bgcolor3:#fcfcfc;
+    --padding1:5%;
+    --padding2:5%;
+}
+
+/*****************************************************************************************
+************************************** end variables ******************************/
+
+
+/*****************************************************************************************
+**************************************  start global rules ******************************/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'monst';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'lora';
+    src: url(../fonts/Lora-Regular.ttf);
+}
+
+body{
+    font-family: 'monst';
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer !important;
+}
+/*****************************************************************************************
+************************************** end global rules ******************************/
+
+
+/*****************************************************************************************
+************************************** start header******************************/
+
+header{
+    max-width: 100%;
+    padding-left: var(--padding1) ;
+    padding-right:var(--padding1) ;
+    background-color: var(--bgcolor3);
+}
+
+.head-footer{
+    max-width: 100%;
+    padding-left: var(--padding1);
+    padding-right: var(--padding1);
+    background: var(--bgcolor);
+    color: white;
+    font-family: 'monst';
+}
+
+.head-footer .head-footer2{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+    .head-footer .head-footer2 {
+        flex-direction: column;
+    }
+        .head-footer .head-foot3,.head-footer .head-foot4{
+            justify-content: space-around;
+            margin: 4px 0;
+        }
+}
+
+.head-footer .head-foot3{
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+}
+
+.head-footer .head-foot3 h5{
+    padding-right: 15px;
+}
+
+.head-footer .head-foot4{
+    display: flex;
+    text-transform: capitalize;
+}
+
+.head-footer .head-foot4 i{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: none;
+}
+
+.head-footer .head-foot4 a{
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+header .contaner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    header .contaner nav{
+        position: absolute;
+        top: 0;
+        right: 15px !important;
+        border: 2px solid ;
+        background-color: var(--bgcolor2);
+        display: none;
+    }
+    header .contaner .img1{
+        width: 30% !important;
+    }
+    header .contaner nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+        header .contaner nav ul li{
+            margin: 10px 0;
+            padding: 0 100px !important;
+        }
+        header .contaner nav#nav1{
+            right: 0;
+            border: 2px solid;
+            border-bottom: none;
+        }
+        header .contaner nav#nav2{
+            top: 155px;
+            right: 0px;
+            padding: 0 9px 0 0;
+            border: 2px solid;
+            border-top: none;
+        }
+        header .contaner{
+            justify-content: space-between;
+        }
+        header .contaner div.i i {
+            display: block !important;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    header .contaner nav ul li{
+        padding-left: 0px !important;
+        padding-right: 5px !important;
+    }
+}
+
+header .contaner nav ul li{
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header .contaner nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    transition: 0.3s;
+}
+
+header .contaner nav ul li a:hover{
+    color: var(--primarycolor);
+}
+
+header .contaner div.i i{
+    display: none;
+}
+
+header .contaner .img1{
+    width: 20%;
+}
+
+header .contaner .img1 img{
+    width: 100%;
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    header .contaner nav ul li{
+        padding-right: 9px !important;
+    }
+}
+
+
+/*****************************************************************************************
+************************************** end header ******************************/
+
+
+/*****************************************************************************************
+************************************** start landing ******************************/
+
+.landing{
+    width: 100%;
+    height: 60vh;
+    padding: var(--padding1);
+    padding-top: 0;
+    background:url("../images/handbag-g4d0460230_1920.jpg") no-repeat;
+    background-size:cover;
+}
+
+.landing .contaner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.landing .contaner2 .text{
+    width: 50%;
+}
+
+.landing .contaner2 .text h1{
+    font-family: 'monst';
+    font-size: 50px;
+    color:var(--primarycolor);
+    padding-bottom: 30px;
+}
+
+.landing .contaner2 .text p{
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+    font-family: 'lora';
+    color: #d6d6d6;
+}
+
+.landing .contaner2 .text button{
+    border: 2px solid var(--primarycolor);
+    background: none;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.landing .contaner2 .text button:hover{
+    background-color: var(--primarycolor);
+    border-radius: 7px;
+}
+
+.landing .contaner2 .text button a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'monst';
+    transition: 0.4s ease ;
+}
+
+.landing .contaner2 .text button a:hover{
+    color: white;
+}
+
+
+.landing .contaner2 .img2 img{
+    height: 399px;
+
+}
+
+@media (max-width: 575.98px) {
+    .landing{
+        height: auto;
+    }
+    .landing .contaner2 .img2{
+        display: none;
+    }
+        .landing .contaner2 .text{
+            width: auto;
+        }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .landing .contaner2 .img2{
+        display: none;
+    }
+    .landing .contaner2 .text {
+        width: auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .landing .contaner2 .text h1{
+        font-size: 33px;
+    }
+}
+.landing-section{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding-left: var(--padding1);
+    padding-right: var(--padding1);
+}
+
+@media (max-width: 575.98px) {
+    .landing-section {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .landing-section .contaner3 nav ul li {
+            display: none !important;
+        }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .landing-section {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    .landing-section .contaner3 nav ul li{
+        display: none !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .landing-section {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        .landing-section .contaner3 nav .input-fild input {
+            padding-left: 0;
+            width: 130px;
+        }
+    
+        .landing-section .contaner3 nav ul li a {
+            padding-left: 0 !important;
+            padding-right: 15px !important;
+        }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .landing .contaner2 .text{
+        width: auto;
+    }
+    .landing-section{
+        padding: 0 15px !important;
+    }
+}
+
+.landing-section .contaner3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing-section .contaner3 .select-cont{
+    display: flex;
+}
+
+.landing-section .contaner3 select{
+    margin-top: 15.5px;
+    background:black;
+    border: none;
+    color: white;
+    margin-right: 17px;
+}
+
+.landing-section .contaner3 nav ul {
+    display: flex;
+}
+
+
+.landing-section .contaner3 nav ul li{
+    display: inline-block;
+    margin-top: 15.5px;
+}
+
+.landing-section .contaner3 nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+        padding-left: 33px;
+            padding-right: 20px;
+            padding-top: 5px;
+    transition: 0.3s;
+}
+
+.landing-section .contaner3 nav ul li a:hover{
+    color: var(--primarycolor);
+}
+
+.landing-section .contaner3 nav .input-fild{
+    align-self: center;
+    margin-top: 10px;
+    display: flex;
+}
+
+.landing-section .contaner3 nav .input-fild input{
+    border: none;
+    font-size: 13px;
+    font-family: 'monst';
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    text-transform: capitalize;
+    outline: none;
+}
+
+
+.landing-section .contaner3 nav .input-fild i{
+    background-color: #d3995f;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*****************************************************************************************
+************************************** end landing ******************************/
+
+
+/*****************************************************************************************
+************************************** start section2 ******************************/
+
+.two{
+    max-width: 100%;
+    max-height: fit-content;
+    padding: var(--padding1);
+    padding-top: 30px;
+}
+
+.two .contaner4{
+    text-align: center;
+}
+
+.two .contaner4 h2{
+    padding-bottom: 50px;
+    font-size: 30px;
+    color: var(--primarycolor);
+}
+
+.two .contaner4 nav ul li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+}
+
+.two .contaner4 nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    transition: 0.4s;
+}
+
+.two .contaner4 nav ul li a:hover{
+    color: var(--primarycolor);
+}
+
+.two .contaner4 .box{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.two .contaner4 .box .cards img{
+    width: 100%;
+    height: 90%;
+    cursor: pointer;
+}
+
+.two .contaner4 .box .cards h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.two .contaner4 .box .cards p{
+    color: var(--primarycolor);
+}
+
+@media (max-width: 575.98px) {
+    .two .contaner4 nav ul li{
+        padding-right: 0;
+    }
+        .two .contaner4 .box{
+            gap: 50px;
+        }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .two .contaner4 .box{
+        grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+    }
+}
+
+
+/*****************************************************************************************
+************************************** end section2 ******************************/
+
+
+/*****************************************************************************************
+************************************** start section3 ******************************/
+.three{
+    max-width: 100%;
+    max-height: fit-content;
+    padding: var(--padding1);
+    padding-top: 30px;
+    text-align: center;
+    background-color: var(--bgcolor2);
+}
+
+.three .contaner5 h2{
+    font-size: 30px;
+    color: var(--primarycolor);
+    padding-bottom: 40px;
+}
+
+.three .contaner5 p{
+    line-height: 1.6;
+    font-family: 'lora';
+    font-size: 15px;
+    padding-bottom: 40px;
+    color: var(--secondrycolor);
+}
+
+.three .contaner5 button{
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: none;
+    border: 2px solid var(--primarycolor);
+    transition: 0.3s;
+    font-family: 'monst';
+}
+
+.three .contaner5 button:hover{
+    background-color: var(--primarycolor);
+    border-radius: 5px;
+    color: white;
+}
+
+.three .contaner5 .box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 40px;
+    padding-top: 60px;
+}
+
+.three .contaner5 .box .cards .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.three .contaner5 .box .cards img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.three .contaner5 .box .cards img.man{
+    height: 100px;
+}
+
+.sec-three-continue{
+    width: 100%;
+    height: 30vh;
+    background-color: var(--bgcolor);
+    text-align: center;
+    /* position: relative; */
+}
+
+.sec-three-continue .contaner6{
+    position: relative;
+    top: 50%;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.sec-three-continue .contaner6 p{
+    font-size: 30px;
+    color: var(--primarycolor);
+    font-family: 'monst';
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.sec-three-continue .contaner6 h2{
+    font-size: 50px;
+    color: white;
+}
+
+.sec-three-continue2{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--bgcolor2);
+}
+
+.sec-three-continue2 .contaner7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sec-three-continue2 .contaner7 h2{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.sec-three-continue2 .contaner7 form input.ma{
+    padding-right: 109px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    border: 2px solid var(--primarycolor);
+    font-size: 15px;
+    font-family: 'monst';
+}
+
+.sec-three-continue2 .contaner7 form input.ma::placeholder{
+    padding: 0 0 0 1rem;
+}
+.sec-three-continue2 .contaner7 form input.ma:focus::placeholder{
+    opacity: 0;
+}
+
+.sec-three-continue2 .contaner7 form .sub{
+    border: 2px solid transparent;
+    background:none;
+    font-size: 15px;
+    font-family: 'monst';
+    cursor: pointer;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    background-color: var(--primarycolor);
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sec-three-continue2 .contaner7 form .sub:hover{
+    background:none;
+    border: 2px solid var(--primarycolor);
+    color: var(--secondrycolor);
+}
+
+@media (max-width: 575.98px) {
+    .sec-three-continue2{
+        height: auto;
+        padding: 20px 0;
+    }
+    .sec-three-continue2 .contaner7{
+        flex-direction: column;
+        transform: none;
+    }
+    .sec-three-continue2 .contaner7 form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .sec-three-continue2 .contaner7 form input.ma{
+        padding: 10px !important;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .sec-three-continue2 .contaner7 form input.sub{
+        width: fit-content;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .three .contaner5 .box {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 25px;
+    }
+}
+/*****************************************************************************************
+************************************** end section3 ******************************/
+
+
+/*****************************************************************************************
+************************************** start section4 ******************************/
+
+.four{
+    width: 100%;
+    padding-left: var(--padding1);
+    padding-right: var(--padding1);
+    padding-top: 10px;
+}
+
+.four .contaner8 .info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.four .contaner8 .text{
+    width: 60%;
+}
+
+.four .contaner8 .text h3{
+    font-size: 30px;
+    padding-bottom: 30px;
+    color: var(--primarycolor);
+}
+
+.four .contaner8 .text p{
+    font-size: 15px;
+    color: var(--secondrycolor);
+    padding-bottom: 50px;
+}
+
+.four .contaner8 nav ul li{
+    display: inline-block;
+    padding:1rem
+}
+
+.four .contaner8 nav ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    border: 2px solid var(--primarycolor);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.four .contaner8 nav ul li a:hover{
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+.four  .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 40px;
+    text-align: center;
+}
+
+.four  .box .cards h3{
+    padding-top: 10px;
+}
+
+.four  .box .cards p{
+    color: var(--primarycolor);
+    padding-top: 10px;
+}
+
+.four  .box .cards{
+    cursor: pointer;
+}
+
+.four  .box .cards img{
+    width: 100%;
+    height: 80%;
+}
+
+.four .input{
+    padding: 40px;
+    text-align: center;
+}
+
+.four .input button{
+    text-transform: capitalize;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: none;
+    border: 2px solid var(--primarycolor);
+    font-size: 15px;
+    font-family: 'monst';
+    transition: 0.3s;
+}
+
+.four .input button:hover{
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+@media (max-width: 575.98px) {
+    .four .contaner8{
+        margin:  0 0 10px 0;
+    }
+    .four .contaner8 nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+@media (min-width: 576px){
+    .four .contaner8 nav ul {
+            display: flex;
+        }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .four .contaner8 nav ul{
+        display: flex;
+    }
+        .four .box{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+}
+/*****************************************************************************************
+************************************** end section3 ******************************/
+
+/*****************************************************************************************
+************************************** start section4 ******************************/
+
+.five{
+    width: 100%;
+    padding-left: var(--padding1);
+    padding-right: var(--padding1);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: var(--bgcolor2);
+
+}
+
+.five .contaner9 {
+    display: flex;
+    align-items: center;
+}
+
+.five .contaner9 img{
+    width: 130%;
+    height: 245px;
+}
+
+.five .contaner9 .text{
+    padding-left: 15px
+}
+
+.five .contaner9 .text h3{
+    font-size: 25px;
+    padding-bottom: 25px
+}
+
+.five .contaner9 .text h4{
+    font-size: 15px;
+    width: fit-content;
+    border: 2px solid var(--primarycolor);
+    color: var(--primarycolor);
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    padding: 5px;
+}
+
+.five .contaner9 .text p{
+    color: var(--secondrycolor);
+    font-size: 15px;
+    font-family: 'lora';
+    padding-bottom: 25px;
+}
+
+.five .contaner9 .text button{
+    background: none;
+    border:2px solid var(--primarycolor);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: capitalize;
+    font-family: 'monst';
+    transition: 0.3s;
+}
+
+.five .contaner9 .text button:hover{
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+@media (max-width: 575.98px) {
+    .five .contaner9{
+        flex-direction: column;
+    }
+    .five .contaner9 img{
+        width: 110% !important;
+    }
+    .five .contaner9 .text{
+        padding-left: 0 !important;
+        margin: 10px 0;
+    }
+}
+/*****************************************************************************************
+************************************** end section4 ******************************/
+
+
+/*****************************************************************************************
+************************************** start footer ******************************/
+
+footer{
+    background-color: var(--bgcolor);
+    width: 100%;
+    height: fit-content;
+    padding-left: var(--padding1);
+    padding-right: var(--padding1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+footer .contaner10{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+grid-gap: 20px;
+}
+
+footer .contaner10 .text h4{
+    font-size: 15px;
+    width: fit-content;
+    border: 2px solid var(--primarycolor);
+    color: var(--primarycolor);
+    margin-bottom: 35px;
+    letter-spacing: 5px;
+    padding: 5px;
+}
+
+footer .contaner10 .text h4 + p{
+    font-size: 15px;
+    font-family: 'lora';
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+footer .contaner10 .text h4 + p + p{
+    font-family: 'monst';
+    font-size: 13px;
+    padding-top: 25px;
+}
+
+footer .contaner10 .text h4 + p + p + p{
+    font-size: 13px;
+    font-family: 'monst';
+}
+
+footer .contaner10 .text h4 + p + p + p span{
+    color: var(--primarycolor);
+}
+
+footer .contaner10 nav ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .contaner10 nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .contaner10 nav ul li a:hover {
+    color: var(--primarycolor);
+}
+
+footer .contaner10 .contact h4 {
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
+footer .contaner10 .contact p{
+    line-height: 1.6;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+footer .contaner10 .contact p + p {
+    border: 2px solid var(--primarycolor);
+    text-align: center;
+    padding:10px;
+    margin-top: 20px;
+}
+
+footer .contaner10 .contact .icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+@media (max-width: 575.98px) {
+    footer .contaner10 nav{
+        text-align: center;
+    }
+    footer .contaner10 .contact p{
+        width: auto;
+    }
+}
+
+/*****************************************************************************************
+************************************** end footer ******************************/
+.show{
+    display: block !important;
+}
+#btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #d3995f;
+    border-radius: 50px;
+    font-size: 30px;
+    padding-top: 7.5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
